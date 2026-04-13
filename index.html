@@ -2,101 +2,138 @@
 <html lang="en">
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>RAHUL TOSS FIXER</title>
-
 <!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s){
-if(f.fbq)return;n=f.fbq=function(){
-n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';
+if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)
-}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+s.parentNode.insertBefore(t,s)}
+(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '1265282839024084');
-fbq('track', 'PageView');
-fbq('track', 'ViewContent');
+fbq('init','781672881608418');
+fbq('track','PageView');
 </script>
 
-<script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PRINCE GALAXY</title>
 
 <style>
-body{
+*{
 margin:0;
-font-family:sans-serif;
-background:linear-gradient(to bottom,#020617,#0f172a);
-color:white;
+padding:0;
+box-sizing:border-box;
+font-family:system-ui;
 }
 
-/* FULL SCREEN */
-.main{
-height:100vh;
+body{
+background:#0c0f1a;
+color:#fff;
 display:flex;
-flex-direction:column;
-justify-content:space-between;
-padding:20px;
+justify-content:center;
 }
 
-/* TITLE */
-.title{
-font-size:28px;
-font-weight:900;
-color:#facc15;
+.container{
+width:100%;
+max-width:400px;
+padding:20px 15px 100px;
+}
+
+/* PROFILE */
+
+.profile{
 text-align:center;
+margin-bottom:20px;
+}
+
+.profile img{
+width:100px;
+height:100px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid #ccc;
+}
+
+.profile h1{
+margin-top:10px;
+font-size:22px;
 }
 
 /* CARD */
+
 .card{
-background:#111827;
-padding:20px;
-border-radius:16px;
+background:#ffffff10;
+border:1px solid #ffffff20;
+border-radius:12px;
+padding:16px;
+margin-bottom:15px;
 text-align:center;
-margin-top:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.5);
 }
 
 /* BUTTON */
+
 .btn{
 display:block;
-width:100%;
-padding:16px;
-border-radius:12px;
-font-weight:bold;
+margin-top:14px;
+padding:14px;
+border-radius:30px;
+background:#1fa2ff;
+color:#fff;
+font-weight:700;
+text-decoration:none;
+}
+
+/* FEATURES */
+
+.features{
+list-style:none;
+margin-top:10px;
+}
+
+.features li{
+margin:6px 0;
+font-size:14px;
+}
+
+.features li::before{
+content:"✓ ";
+color:#4caf50;
+}
+
+/* FOOTER */
+
+.footer{
 text-align:center;
-margin-top:15px;
-transition:0.2s;
-}
-
-.btn1{ background:#22c55e; }
-.btn2{ background:#2563eb; }
-
-.btn:hover{
-transform:scale(1.05);
-}
-
-/* BADGE */
-.badge{
-background:#ef4444;
-padding:5px 10px;
-border-radius:20px;
 font-size:12px;
-display:inline-block;
-margin-top:8px;
+opacity:0.7;
+margin-top:10px;
 }
 
-/* DISCLAIMER */
-.disclaimer{
-font-size:11px;
-color:#9ca3af;
+/* BOTTOM CTA */
+
+.bottom{
+position:fixed;
+bottom:0;
+width:100%;
+max-width:400px;
+padding:10px;
+background:#000;
+}
+
+.bottom a{
+display:block;
+padding:14px;
+border-radius:30px;
 text-align:center;
-margin-top:15px;
-line-height:1.4;
+font-weight:bold;
+background:#12d8fa;
+color:#000;
+text-decoration:none;
 }
 </style>
 
@@ -104,90 +141,46 @@ line-height:1.4;
 
 <body>
 
-<div class="main">
+<div class="container">
 
-<!-- TOP -->
-<div>
-<h1 class="title">RAHUL TOSS FIXER</h1>
-
-<div class="text-center mt-2">
-<span class="badge">🔥 LIMITED ACCESS</span>
-</div>
-
-<div class="text-center mt-3 text-lg">
-⏳ Join Fast: <span id="countdown" class="text-yellow-300 font-bold">30</span>s
+<div class="profile">
+<img src="https://github.com/h38331627-cloud/princegalaxy1/blob/main/priceimg.jpg?raw=true">
+<h1>PRINCE GALAXY</h1>
 </div>
 
 <div class="card">
-<p class="text-lg font-semibold">📢 Daily Toss Updates</p>
-<p class="text-sm mt-2">High Accuracy • Instant Access 👇</p>
-</div>
-</div>
-
-<!-- BUTTONS -->
-<div>
-
-<a href="https://t.me/+BZMHSu-IhjFlZjll" id="btn1">
-<div class="btn btn1">JOIN NOW 🚀</div>
+<h2>🏏 Cricket Predictions</h2>
+<p>Accurate match & toss analysis</p>
+<a href="https://t.me/+ZwQE5-RHvFMwOWRl" class="btn">
+Join Free Telegram
 </a>
+</div>
 
-<a href="https://t.me/+BZMHSu-IhjFlZjll" id="btn2">
-<div class="btn btn2">GET ACCESS ⚡</div>
+<div class="card">
+<h2>📊 What You Get</h2>
+<ul class="features">
+<li>Toss & Match Prediction</li>
+<li>Team Analysis</li>
+<li>Daily Updates</li>
+<li>High Accuracy Tips</li>
+</ul>
+</div>
+
+<div class="card">
+<p>Trusted by thousands of users</p>
+</div>
+
+<div class="footer">
+Marketing by QB Agency™
+</div>
+
+</div>
+
+<div class="bottom">
+<a href="https://t.me/+ZwQE5-RHvFMwOWRl">
+Join Now
 </a>
-
-<p class="disclaimer">
-⚠️ This page is for informational purposes only.  
-We do not guarantee any results, profits, or accuracy.  
-Users should act at their own discretion.  
-This page follows advertising guidelines and avoids misleading claims.
-</p>
-
 </div>
-
-</div>
-
-<script>
-
-let timeLeft = 30;
-let leadTracked = false;
-
-const countdown = document.getElementById("countdown");
-
-const timer = setInterval(() => {
-timeLeft--;
-countdown.innerText = timeLeft;
-
-if(timeLeft === 5 && !leadTracked){
-   fbq('track', 'Lead', {
-     content_name: 'Telegram Join',
-     value: 1,
-     currency: 'INR'
-   });
-   leadTracked = true;
-}
-
-if(timeLeft < 0){
-clearInterval(timer);
-window.location.href = "https://t.me/+BZMHSu-IhjFlZjll";
-}
-},1000);
-
-/* TRACKING */
-function trackLead(){
-if(!leadTracked){
-fbq('track', 'Lead', {
-  content_name: 'Telegram Join',
-  value: 1,
-  currency: 'INR'
-});
-leadTracked = true;
-}
-}
-
-document.getElementById("btn1").onclick = trackLead;
-document.getElementById("btn2").onclick = trackLead;
-
-</script>
 
 </body>
 </html>
