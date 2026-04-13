@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RAHUL TOSS FIXER</title>
+
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;n=f.fbq=function(){
+n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1265282839024084');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent');
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body{
+margin:0;
+font-family:sans-serif;
+background:linear-gradient(to bottom,#020617,#0f172a);
+color:white;
+}
+
+/* FULL SCREEN */
+.main{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+padding:20px;
+}
+
+/* TITLE */
+.title{
+font-size:28px;
+font-weight:900;
+color:#facc15;
+text-align:center;
+}
+
+/* CARD */
+.card{
+background:#111827;
+padding:20px;
+border-radius:16px;
+text-align:center;
+margin-top:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* BUTTON */
+.btn{
+display:block;
+width:100%;
+padding:16px;
+border-radius:12px;
+font-weight:bold;
+text-align:center;
+margin-top:15px;
+transition:0.2s;
+}
+
+.btn1{ background:#22c55e; }
+.btn2{ background:#2563eb; }
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* BADGE */
+.badge{
+background:#ef4444;
+padding:5px 10px;
+border-radius:20px;
+font-size:12px;
+display:inline-block;
+margin-top:8px;
+}
+
+/* DISCLAIMER */
+.disclaimer{
+font-size:11px;
+color:#9ca3af;
+text-align:center;
+margin-top:15px;
+line-height:1.4;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="main">
+
+<!-- TOP -->
+<div>
+<h1 class="title">RAHUL TOSS FIXER</h1>
+
+<div class="text-center mt-2">
+<span class="badge">🔥 LIMITED ACCESS</span>
+</div>
+
+<div class="text-center mt-3 text-lg">
+⏳ Join Fast: <span id="countdown" class="text-yellow-300 font-bold">30</span>s
+</div>
+
+<div class="card">
+<p class="text-lg font-semibold">📢 Daily Toss Updates</p>
+<p class="text-sm mt-2">High Accuracy • Instant Access 👇</p>
+</div>
+</div>
+
+<!-- BUTTONS -->
+<div>
+
+<a href="https://t.me/+BZMHSu-IhjFlZjll" id="btn1">
+<div class="btn btn1">JOIN NOW 🚀</div>
+</a>
+
+<a href="https://t.me/+BZMHSu-IhjFlZjll" id="btn2">
+<div class="btn btn2">GET ACCESS ⚡</div>
+</a>
+
+<p class="disclaimer">
+⚠️ This page is for informational purposes only.  
+We do not guarantee any results, profits, or accuracy.  
+Users should act at their own discretion.  
+This page follows advertising guidelines and avoids misleading claims.
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+let timeLeft = 30;
+let leadTracked = false;
+
+const countdown = document.getElementById("countdown");
+
+const timer = setInterval(() => {
+timeLeft--;
+countdown.innerText = timeLeft;
+
+if(timeLeft === 5 && !leadTracked){
+   fbq('track', 'Lead', {
+     content_name: 'Telegram Join',
+     value: 1,
+     currency: 'INR'
+   });
+   leadTracked = true;
+}
+
+if(timeLeft < 0){
+clearInterval(timer);
+window.location.href = "https://t.me/+BZMHSu-IhjFlZjll";
+}
+},1000);
+
+/* TRACKING */
+function trackLead(){
+if(!leadTracked){
+fbq('track', 'Lead', {
+  content_name: 'Telegram Join',
+  value: 1,
+  currency: 'INR'
+});
+leadTracked = true;
+}
+}
+
+document.getElementById("btn1").onclick = trackLead;
+document.getElementById("btn2").onclick = trackLead;
+
+</script>
+
+</body>
+</html>
